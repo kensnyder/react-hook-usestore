@@ -1,0 +1,28 @@
+{
+  "name": "v2-tool-for-defining-a-shared-store-plus-a-usestore-react-hook",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "is-promise": "2.1.0",
+    "lodash.forown": "4.4.0",
+    "lodash.map": "4.6.0",
+    "lodash.size": "4.2.0",
+    "react": "next",
+    "react-dom": "next"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    "chrome 67",
+    "firefox 55"
+  ],
+  "keywords": [],
+  "description": "You can define a store that is shared by multiple components. The store is completely functional so you can easily unit test it."
+}

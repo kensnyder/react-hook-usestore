@@ -1,0 +1,140 @@
+* {
+	box-sizing: border-box;
+	vertical-align: middle;
+	position: relative;
+}
+body {
+	margin: 0;
+	padding: 15px;
+}
+
+main {
+	background: #ddd;
+}
+
+pre {
+	font-family: Monaco, Consolas, monospace;
+}
+body,
+select,
+button,
+input {
+	font: 14px/1.25 Helvetica, Arial, sans-serif;
+}
+input {
+	padding: 0 8px;
+	border: 1px solid blue;
+	height: 28px;
+	line-height: 28px;
+}
+button {
+	padding: 0 8px;
+	height: 28px;
+	border: 1px solid blue;
+	font-weight: bold;
+	color: blue;
+	margin-right: 2px;
+	cursor: pointer;
+}
+button.selected {
+	background-color: rgba(0, 0, 255, 0.25);
+}
+button.reset {
+	float: right;
+	border-color: transparent;
+	background: none;
+	font-weight: normal;
+}
+/* Stuff that would go into other files */
+.Component {
+	margin: 15px 0 0 0;
+	padding: 15px;
+	border: 1px solid #ccc;
+}
+.StoryArea {
+	padding-top: 2px;
+	background-color: #eee;
+}
+.CoverImage {
+	margin: 0;
+	padding: 0;
+}
+.Component:first-child {
+	margin-top: 0;
+}
+.StoryToolbar {
+	background-color: #eee;
+}
+.StoryItem {
+	background-color: white;
+	clear: both;
+}
+.StoryDebug {
+	background-color: white;
+}
+.StoryItem .title {
+	padding: 0 12px 6px 0;
+	margin: 0;
+	font-size: 16px;
+}
+.StoryItem.view-grid {
+	display: inline-block;
+	vertical-align: bottom;
+	width: 230px;
+	margin-right: 15px;
+}
+.StoryItem.view-grid .title {
+	margin-top: 15px;
+}
+.StoryItem.view-grid .descr {
+	display: none;
+}
+.StoryItem.view-list {
+	height: 140px;
+}
+.StoryItem.view-list:first-child {
+	margin-top: 13px;
+}
+.StoryItem.view-list .CoverImage {
+	margin-right: 15px;
+	float: left;
+}
+.StoryCount {
+	background-color: #eee;
+}
+.Component::after {
+	position: absolute;
+	top: -10px;
+	right: 6px;
+	width: auto;
+	display: inline-block;
+	padding: 2px 6px;
+	background-color: rgba(70, 70, 70, 0.5);
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+	letter-spacing: 0.5px;
+	color: white;
+	font-size: 12px;
+	border-radius: 2px;
+}
+.App::after {
+	content: 'App';
+}
+.CoverImage::after {
+	content: 'CoverImage';
+}
+.StoryArea::after {
+	content: 'StoryArea';
+}
+.StoryCount::after {
+	content: 'StoryCount';
+}
+.StoryItem::after {
+	content: 'StoryItem';
+}
+.StoryToolbar::after {
+	content: 'StoryToolbar';
+}
+.StoryDebug::after {
+	content: 'StoryDebug';
+}
